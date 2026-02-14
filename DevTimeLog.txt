@@ -10,5 +10,4 @@ Sat. 14th Feb. 2026:
 
 
 To Do:
-* Add title screen for game
 * Add sound effects
