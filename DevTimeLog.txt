@@ -1,13 +1,13 @@
 Tue. 10th Feb. 2026:
-- 9:09 AM -> 10m
+- 09:09 AM -> 10m
 Fri. 13th Feb. 2026:
-- 9:36 PM -> 1h 22m
+- 09:36 PM -> 1h 22m
 Sat. 14th Feb. 2026:
 - 11:06 AM -> 1h 37m
-- 12:19 PM -> 1h 1m 58s
+- 12:19 PM -> 1h 2m
+- 02:19 PM -> 1h 24m
+
 
 To Do:
 * Add title screen for game
-* Add ceiling for game level
-* Game lighting and post processing
 * Add sound effects
