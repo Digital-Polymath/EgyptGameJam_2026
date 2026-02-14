@@ -1634,6 +1634,10 @@ PrefabInstance:
       propertyPath: _retryButton
       value: 
       objectReference: {fileID: 66126268}
+    - target: {fileID: 3193942472231778309, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
+      propertyPath: _sceneIndexToLoad
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5287271469556296544, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
