@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] private Button _retryButton;
+    [SerializeField] private int _sceneIndexToLoad = 1;
     [SerializeField] private IDCard _idCard;
     private GameOverScreen _gameOverScreen;
 
@@ -10,13 +14,20 @@ public class GameController : MonoBehaviour
         _gameOverScreen = GetComponent<GameOverScreen>();
     }
 
+    private void Start()
+    {
+        _retryButton.gameObject.SetActive(false);
+    }
+
     private void OnEnable()
-    {        
+    {
+        _gameOverScreen.OnGameOver += EnableRetyButton;
         _gameOverScreen.OnTimeFinished += PlayerLost;
+        _retryButton.onClick.AddListener(LoadSceneByIndex);
     }
 
     private void OnDisable()
-    {        
+    {
         _gameOverScreen.OnTimeFinished -= PlayerLost;
     }
 
@@ -37,6 +48,19 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("<color=#F30>You Lose!!</color>");
         _idCard.gameObject.SetActive(false);
+    }
 
+    void LoadSceneByIndex()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene(_sceneIndexToLoad);
+    }
+
+    void EnableRetyButton()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        _retryButton.gameObject.SetActive(true);
     }
 }

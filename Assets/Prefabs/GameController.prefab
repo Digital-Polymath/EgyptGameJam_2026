@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05edc9e9b14b4a54bb1ad8849aa2c614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  _retryButton: {fileID: 0}
+  _sceneIndexToLoad: 0
   _idCard: {fileID: 0}
 --- !u!114 &4417564187339630955
 MonoBehaviour:
@@ -471,7 +473,7 @@ Transform:
   m_GameObject: {fileID: 7511824396865942949}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.8665761, z: -0, w: 0.499045}
-  m_LocalPosition: {x: 0.729, y: 0.456, z: -1.134}
+  m_LocalPosition: {x: 0.729, y: 0.4706, z: -1.134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
