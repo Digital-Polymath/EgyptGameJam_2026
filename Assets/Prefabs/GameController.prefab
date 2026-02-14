@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05edc9e9b14b4a54bb1ad8849aa2c614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  _retryButton: {fileID: 0}
+  _sceneIndexToLoad: 0
   _idCard: {fileID: 0}
 --- !u!114 &4417564187339630955
 MonoBehaviour:

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameOverScreen : MonoBehaviour
 {
     public event System.Action OnTimeFinished;
+    public event System.Action OnGameOver;
     [field: SerializeField] public bool PlayerWon { get; set; }
 
     [SerializeField] private TextMeshProUGUI _gameOverText;
@@ -21,6 +22,7 @@ public class GameOverScreen : MonoBehaviour
 
     void Start()
     {
+        _gameOverText.text = "";
         _gameOverCanvasGroup.alpha = 0;
         _timerText.fontSize = _timerStartingFontSize;
         StartCoroutine(GameCountdown());
@@ -75,5 +77,8 @@ public class GameOverScreen : MonoBehaviour
             _gameOverText.text = _loseText;
             _gameOverText.color = _loseColor;
         }
+
+        yield return new WaitForSeconds(0.5f);
+        OnGameOver?.Invoke();
     }
 }
