@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private Button _retryButton;
-    [SerializeField] private int _sceneIndexToLoad = 0;
+    [SerializeField] private int _sceneIndexToLoad = 1;
     [SerializeField] private IDCard _idCard;
     private GameOverScreen _gameOverScreen;
 
@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(_sceneIndexToLoad);
     }
 
     void EnableRetyButton()
