@@ -6,6 +6,13 @@ public class IDSpawner : MonoBehaviour
     [SerializeField] private List<Transform> _spawnPoints;
     [SerializeField] private GameObject _idCardPrefab;
 
+    private GameController _gameController;
+
+    private void Awake()
+    {
+        _gameController = GetComponent<GameController>();
+    }
+
     private void Start()
     {
         SpawnIDCard();
@@ -15,6 +22,8 @@ public class IDSpawner : MonoBehaviour
     {
         int randIndex = Random.Range(0, _spawnPoints.Count);
         Transform spawnPoint = _spawnPoints[randIndex];
-        Instantiate(_idCardPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject card = Instantiate(_idCardPrefab, spawnPoint.position, spawnPoint.rotation);
+
+        _gameController.GetIDCard(card.GetComponent<IDCard>());
     }
 }
