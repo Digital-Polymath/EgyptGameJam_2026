@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class DialogBoxController : MonoBehaviour
 {
     [SerializeField] private Interactor _interactor;
     [SerializeField] private TextMeshProUGUI _interactionText;
