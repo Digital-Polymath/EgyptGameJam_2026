@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 5287271469556296544}
   - component: {fileID: 3193942472231778309}
   - component: {fileID: 4417564187339630955}
+  - component: {fileID: 7329948316987012731}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -154,6 +155,27 @@ MonoBehaviour:
   - {fileID: 1776648736379230087}
   - {fileID: 6985120193603370633}
   _idCardPrefab: {fileID: 3437733278003895506, guid: 85e94b18bb105254e8ee2f119a83ba2d, type: 3}
+--- !u!114 &7329948316987012731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794779012423964793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6769d4116b1b81488c40b0bab80a17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverScreen
+  <PlayerWon>k__BackingField: 0
+  _gameOverText: {fileID: 0}
+  _winText: 
+  _loseText: 
+  _gameOverCanvasGroup: {fileID: 0}
+  _winColor: {r: 0, g: 0, b: 0, a: 0}
+  _loseColor: {r: 0, g: 0, b: 0, a: 0}
+  _fadeDuration: 1
+  _timeLimit: 0
 --- !u!1 &2965400569686962991
 GameObject:
   m_ObjectHideFlags: 0
