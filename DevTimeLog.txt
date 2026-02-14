@@ -6,8 +6,7 @@ Sat. 14th Feb. 2026:
 - 11:06 AM -> 1h 37m
 
 To Do:
-* Add time limit for game
-* Add win/lose condition
+* Add timer text
 * Add title screen for game
 * Add ceiling for game level
 * Game lighting and post processing
