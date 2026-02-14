@@ -1,0 +1,13 @@
+Tue. 10th Feb. 2026:
+- 9:09 AM -> 10m
+Fri. 13th Feb. 2026:
+- 9:36 PM -> 1h 22m
+
+To Do:
+* Random Spawn locations for ID card
+* Add time limit for game
+* Add win/lose condition
+* Add title screen for game
+* Add ceiling for game level
+* Game lighting and post processing
+* Add sound effects
