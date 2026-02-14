@@ -1492,6 +1492,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 917786537964853326, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
+      propertyPath: _textPanel
+      value: 
+      objectReference: {fileID: 1553508283}
+    - target: {fileID: 917786537964853326, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
+      propertyPath: _interactionText
+      value: 
+      objectReference: {fileID: 1748846579}
+    - target: {fileID: 917786537964853326, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
+      propertyPath: _textPanelCanvasGroup
+      value: 
+      objectReference: {fileID: 1553508289}
     - target: {fileID: 2794779012423964793, guid: c21d7d11c278c024281ccb9e03bee6f6, type: 3}
       propertyPath: m_Name
       value: GameController
@@ -1743,56 +1755,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4406570672736266, guid: abf3a67dc9e96b649bec2fde2c63c293, type: 3}
   m_PrefabInstance: {fileID: 2950589467738969993}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1150182709
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1150182710}
-  - component: {fileID: 1150182711}
-  m_Layer: 0
-  m_Name: UI Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1150182710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150182709}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1150182711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150182709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c859d8b064e0f4e4e833d0fc81226fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  _interactor: {fileID: 0}
-  _interactionText: {fileID: 1748846579}
-  _textPanel: {fileID: 1553508283}
-  _textPanelCanvasGroup: {fileID: 1553508289}
-  _fadeDuration: 0.5
-  _fadeOutWaitTime: 2
 --- !u!4 &1156650553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4631730319309726, guid: 5a2b2aefafe7a2f4bb79271e2b6b2e62, type: 3}
@@ -11738,7 +11700,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1150182710}
   - {fileID: 1114915418}
   - {fileID: 410087041}
   - {fileID: 832575519}
